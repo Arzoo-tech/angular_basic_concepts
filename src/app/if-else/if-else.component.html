@@ -1,0 +1,10 @@
+<h1 *ngIf="show;then ifBlock else elseBlock">if-else works!</h1>
+
+<h2>Click on the below button to check the if/else</h2>
+<button (click)='onChange()'>Toggle</button>
+<ng-template #ifBlock >
+    <h3>If Condition</h3>
+</ng-template>
+<ng-template #elseBlock>
+    <h3>Else Condition</h3>
+</ng-template>

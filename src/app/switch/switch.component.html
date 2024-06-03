@@ -1,0 +1,20 @@
+<h1>Switch with elseif!</h1>
+
+<h2>Click on the below buttons to check the switch-condition</h2>
+<button (click)="onChange('red')">click to change color to red</button>
+<button (click)="onChange('green')">click to change color to green</button>
+<button (click)="onChange('blue')">click to change color to blue</button>
+<button (click)="onChange('yellow')">click to change color to yellow</button>
+<button (click)="onChange('orange')">click to change color to orange</button>
+<button (click)="onChange('pink')">click to change color to pink</button>
+<button (click)="onChange('brown')">click to change color to brown</button>
+<div [ngSwitch]="color">
+    <h3 *ngSwitchCase="'red'" style="color :red;">Red Color</h3>
+    <h3 *ngSwitchCase="'green'" style="color :green;">Green Color</h3>
+    <h3 *ngSwitchCase="'blue'" style="color :blue;">Blue Color</h3>
+    <h3 *ngSwitchCase="'yellow'" style="color :yellow;">Yellow Color</h3>
+    <h3 *ngSwitchCase="'orange'" style="color :orange;">Orange Color</h3>
+    <h3 *ngSwitchCase="'pink'" style="color :pink;">Pink Color</h3>
+    <h3 *ngSwitchCase="'brown'" style="color :brown;">Brown Color</h3>
+    <h3 *ngSwitchDefault>Unknown Color</h3>
+</div>

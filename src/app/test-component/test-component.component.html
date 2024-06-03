@@ -1,0 +1,8 @@
+<h2 class="test-comp">This is test-component and it  works!</h2>
+
+<h2>Displaying input box values</h2>
+<input type="text" #testBox placeholder="enter name" name=""name/>
+<button (click)="getValue(testBox.value)">Click</button>
+<p>Box Value is :{{displayVal}}</p>
+<button (click)="getPlaceholderValue(testBox.placeholder)">Click</button>
+<p>placeholder Value is :{{placeholderVal}}</p>

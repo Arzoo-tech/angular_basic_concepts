@@ -1,0 +1,41 @@
+<app-header/>
+<h1>Hello Angular.This app's name is {{title}}</h1>
+<br/>
+<app-login/>
+<br/>
+<input type="text" #box1 (keyup)="getData(box1.value)" />
+<input type="text" #box2 (input)="getData(box2.value)" />
+<h2 (mouseover)="getDataOnHover('over')" >On Hover(check console)</h2>
+<h3 (click)="getName('Arzoo')">here you will se my name</h3>
+
+<app-test-component />
+<br/>
+<app-counter-component />
+<br/>
+<app-property-binding/>
+<br/>
+<app-if-else/>
+<app-property-binding/>
+<br/>
+<app-multiple-condition/>
+<br/>
+<app-switch/>
+<br/>
+<app-for-loop/>
+<br/>
+<app-nested-loop/>
+<br/>
+<app-toggle/>
+<br/>
+<h2>Here the child component is called in parent</h2>
+<app-child [item]="childData"></app-child>
+<button (click)="updateChild()">Update Child Component</button>
+
+<!-- in order to send sting : [item]="'data'" -->
+<h1>UserDetails child Component
+<ul *ngFor="let user of userDetails">
+<app-user-details [item]="user"></app-user-details>
+</ul>
+</h1>
+<app-child-comp (updateDataEvent)="updateData($event)">{{dataFromChild}}</app-child-comp>
+<br/><br/> 

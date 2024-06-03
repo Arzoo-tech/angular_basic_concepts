@@ -1,0 +1,16 @@
+<h1>multiple-condition with elseif!</h1>
+
+<h2>Click on the below buttons to check the multiple-condition</h2>
+<button (click)="onChange('red')">click to change color to red</button>
+<button (click)="onChange('green')">click to change color to green</button>
+<button (click)="onChange('blue')">click to change color to blue</button>
+
+<ng-template [ngIf]="color === 'red'">
+    <h3 style="color :red;">Red Color</h3>
+</ng-template>
+<ng-template [ngIf]="color === 'green'"  >
+    <h3 style="color :green;">Green Color</h3>
+</ng-template>
+<ng-template [ngIf]="color === 'blue'"  >
+    <h3 style="color :blue;">Blue Color</h3>
+</ng-template>
